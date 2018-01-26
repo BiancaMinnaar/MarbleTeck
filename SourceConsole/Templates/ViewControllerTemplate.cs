@@ -207,7 +207,7 @@ namespace SourceConsole.Templates {
             #line hidden
             
             #line 27 ""
-            this.Write("Repository(_MasterRepo, _AuthService);\n        }\n\n        public async Task ");
+            this.Write("Repository(_MasterRepo, _Service);\n        }\n\n        public async Task ");
             
             #line default
             #line hidden
