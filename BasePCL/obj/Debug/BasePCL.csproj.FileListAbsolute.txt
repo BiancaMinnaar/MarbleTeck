@@ -62,10 +62,6 @@
 /Alpha/Clients/MCSZA/NDC/NDC/BasePCL/obj/Debug/BasePCL.csproj.CoreCompileInputs.cache
 /Alpha/Clients/MCSZA/NDC/NDC/BasePCL/obj/Debug/BasePCL.dll
 /Alpha/Clients/MCSZA/NDC/NDC/BasePCL/obj/Debug/BasePCL.pdb
-/Alpha/Clients/MarbleTec/Mobile/BasePCL/obj/Debug/BasePCL.csprojResolveAssemblyReference.cache
-/Alpha/Clients/MarbleTec/Mobile/BasePCL/obj/Debug/BasePCL.csproj.CoreCompileInputs.cache
-/Alpha/Clients/MarbleTec/Mobile/BasePCL/obj/Debug/BasePCL.dll
-/Alpha/Clients/MarbleTec/Mobile/BasePCL/obj/Debug/BasePCL.pdb
 /Alpha/Clients/MarbleTec/Mobile/BasePCL/bin/Debug/BasePCL.dll.config
 /Alpha/Clients/MarbleTec/Mobile/BasePCL/bin/Debug/BasePCL.dll
 /Alpha/Clients/MarbleTec/Mobile/BasePCL/bin/Debug/BasePCL.pdb
@@ -94,3 +90,7 @@
 /Alpha/Clients/MarbleTec/Mobile/BasePCL/bin/Debug/Xamarin.Forms.Xaml.pdb
 /Alpha/Clients/MarbleTec/Mobile/BasePCL/bin/Debug/Xamarin.Forms.Xaml.dll.mdb
 /Alpha/Clients/MarbleTec/Mobile/BasePCL/bin/Debug/Xamarin.Forms.Xaml.xml
+/Alpha/Clients/MarbleTec/Mobile/BasePCL/obj/Debug/BasePCL.csprojResolveAssemblyReference.cache
+/Alpha/Clients/MarbleTec/Mobile/BasePCL/obj/Debug/BasePCL.csproj.CoreCompileInputs.cache
+/Alpha/Clients/MarbleTec/Mobile/BasePCL/obj/Debug/BasePCL.dll
+/Alpha/Clients/MarbleTec/Mobile/BasePCL/obj/Debug/BasePCL.pdb
