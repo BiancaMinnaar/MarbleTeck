@@ -1,0 +1,8 @@
+/Alpha/Clients/Britehouse/Projects/MeasurePro/BasePCL/obj/Release/.NETPortable,Version=v4.6,Profile=Profile151.AssemblyAttribute.cs
+/Alpha/Clients/Britehouse/Projects/MeasurePro/BasePCL/bin/Release/BasePCL.dll
+/Alpha/Clients/Britehouse/Projects/MeasurePro/BasePCL/obj/Release/BasePCL.dll
+/Alpha/Clients/Britehouse/Projects/MeasurePro/BasePCL/bin/Release/Validation.dll
+/Alpha/Clients/Britehouse/Projects/MeasurePro/BasePCL/bin/Release/Newtonsoft.Json.dll
+/Alpha/Clients/Britehouse/Projects/MeasurePro/BasePCL/bin/Release/Xamarin.Forms.Core.dll
+/Alpha/Clients/Britehouse/Projects/MeasurePro/BasePCL/bin/Release/Xamarin.Forms.Platform.dll
+/Alpha/Clients/Britehouse/Projects/MeasurePro/BasePCL/bin/Release/Xamarin.Forms.Xaml.dll
