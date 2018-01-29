@@ -24,6 +24,15 @@
                 <b:SmallTableMenuView x:Name="Menu"></b:SmallTableMenuView>
                 <Button Text="+" Clicked="Handle_Clicked" />
             </StackLayout>
+            <Grid Grid.Row="1" Grid.Column="1" HorizontalOptions="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="20" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <Button Grid.Row="0" Text="^" FontSize="40" TextColor="Purple" HorizontalOptions="Center"></Button>
+                <ContentView x:Name="Detail"></ContentView>
+            </Grid>
         </Grid>
     </ContentPage.Content>
 </b:ProjectBaseContentPage>
