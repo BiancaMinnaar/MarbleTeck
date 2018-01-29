@@ -12,6 +12,7 @@ namespace MarbleTecMobile.Implementation.View
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
             BindingContext = _ViewController.InputObject;
+            On_Home_Event(null, null);
         }
 
         protected override void SetSVGCollection()

@@ -22,7 +22,7 @@ namespace <#= _DataModel.ProjectName #>.Implementation.Service
         public async Task <#= _DataModel.EventName #>(<#= _DataModel.ViewModelName #> model)
         {
             string requestURL = "/path/{Parameter}";
-            var httpMethod = BaseNetworkAccessEnum.Put;
+            var httpMethod = BaseNetworkAccessEnum.Get;
             var parameters = new Dictionary<string, object>()
             {
                 //{"Parameter", model.Property},

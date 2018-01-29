@@ -3,6 +3,7 @@ using System.Threading.Tasks;
 using MarbleTecMobile.Interface.Service;
 using MarbleTecMobile.Interface.Repository;
 using MarbleTecMobile.Implementation.ViewModel;
+using MarbleTecMobile.Implementation.Service;
 
 namespace MarbleTecMobile.Implementation.Repository
 {
@@ -21,5 +22,12 @@ namespace MarbleTecMobile.Implementation.Repository
             await _Service.Home(model);
             completeAction();
         }
+		
+        public async Task GetSmallTableMenu(HomeViewModel model, Action completeAction)
+		{
+            var smallTableMenuService = new SmallTableMenuService(_MasterRepo.NetworkInterface);
+            var smallTableRepo = new SmallTableMenuRepository(_MasterRepo, smallTableMenuService);
+            await smallTableRepo.SmallTableMenu(new SmallTableMenuViewModel(){MenuType="user"}, completeAction);
+		}
     }
 }

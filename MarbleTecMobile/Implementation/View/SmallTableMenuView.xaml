@@ -7,8 +7,6 @@
     xmlns:b="clr-namespace:MarbleTecMobile.Implementation.View"
     xmlns:svg="clr-namespace:TwinTechsForms.NControl;assembly=TwinTechsForms.NControl.SvgImageView"
     x:Class="MarbleTecMobile.Implementation.View.SmallTableMenuView" 
-    x:TypeArguments="p:SmallTableMenuViewController, m:SmallTableMenuViewModel" 
-    BackgroundColor="#565E60"
-    Title="Login">
+    x:TypeArguments="p:SmallTableMenuViewController, m:SmallTableMenuViewModel">
     <StackLayout x:Name="Menu"></StackLayout>
 </b:ProjectBaseContentView>

@@ -11,6 +11,17 @@
     BackgroundColor="#565E60"
     Title="Login">
     <ContentPage.Content>
-        <Label Text="HomeView" />
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <b:SmallTableMenuView Grid.Row="0" Grid.Column="0"></b:SmallTableMenuView>
+        </Grid>
     </ContentPage.Content>
 </b:ProjectBaseContentPage>

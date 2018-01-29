@@ -16,11 +16,11 @@ namespace MarbleTecMobile.Implementation.Service
 
         public async Task SmallTableMenu(SmallTableMenuViewModel model)
         {
-            string requestURL = "/path/{Parameter}";
-            var httpMethod = BaseNetworkAccessEnum.Put;
+            string requestURL = "/menu";
+            var httpMethod = BaseNetworkAccessEnum.Get;
             var parameters = new Dictionary<string, object>()
             {
-                //{"Parameter", model.Property},
+                {"type", model.MenuType},
             };
             await _NetworkInterface(requestURL, parameters, httpMethod);
         }

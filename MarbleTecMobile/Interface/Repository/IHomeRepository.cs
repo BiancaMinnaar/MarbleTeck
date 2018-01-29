@@ -7,5 +7,6 @@ namespace MarbleTecMobile.Interface.Repository
     public interface IHomeRepository
     {
         Task Home(HomeViewModel model, Action completeAction);
+        Task GetSmallTableMenu(HomeViewModel model, Action completeAction);
     }
 }

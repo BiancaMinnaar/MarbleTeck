@@ -123,7 +123,7 @@ namespace SourceConsole.Templates {
             this.Write(@" model)
         {
             string requestURL = ""/path/{Parameter}"";
-            var httpMethod = BaseNetworkAccessEnum.Put;
+            var httpMethod = BaseNetworkAccessEnum.Get;
             var parameters = new Dictionary<string, object>()
             {
                 //{""Parameter"", model.Property},

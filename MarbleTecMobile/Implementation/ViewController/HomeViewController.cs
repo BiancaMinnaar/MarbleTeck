@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using MarbleTecMobile.Base;
 using MarbleTecMobile.Implementation.Repository;
@@ -24,7 +25,10 @@ namespace MarbleTecMobile.Implementation.ViewController
 
         public async Task Home()
         {
-            
+            await _Reposetory.GetSmallTableMenu(InputObject, () => 
+            {
+                InputObject.MenuItems = DeserializeObject<List<SmallTableMenuItemViewModel>>(_ResponseContent);
+            });
         }
     }
 }
