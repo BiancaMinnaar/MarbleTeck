@@ -56,10 +56,21 @@
     <Compile Include="Interface\Repository\ILoginRepository.cs" />
     <Compile Include="Interface\ViewController\ILoginViewController.cs" />
     <Compile Include="Interface\Service\ILoginService.cs" />
+    <Compile Include="Implementation\Repository\HomeRepository.cs" />
+    <Compile Include="Implementation\Service\HomeService.cs" />
+    <Compile Include="Implementation\View\HomeView.cs">
+      <DependentUpon>HomeView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Implementation\ViewController\HomeViewController.cs" />
+    <Compile Include="Implementation\ViewModel\HomeViewModel.cs" />
+    <Compile Include="Interface\Repository\IHomeRepository.cs" />
+    <Compile Include="Interface\Service\IHomeService.cs" />
+    <Compile Include="Interface\ViewController\IHomeViewController.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="App.xaml" />
     <EmbeddedResource Include="Implementation\View\LoginView.xaml" />
+    <EmbeddedResource Include="Implementation\View\HomeView.xaml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BasePCL\BasePCL.csproj">
