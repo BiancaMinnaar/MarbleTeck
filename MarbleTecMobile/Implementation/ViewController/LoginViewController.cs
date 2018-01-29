@@ -26,7 +26,7 @@ namespace MarbleTecMobile.Implementation.ViewController
         {
             await _Reposetory.Login(InputObject, () => 
             { 
-                
+                _MasterRepo.PushHomeView();
             });
         }
     }
