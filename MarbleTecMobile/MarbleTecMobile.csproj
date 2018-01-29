@@ -66,11 +66,22 @@
     <Compile Include="Interface\Repository\IHomeRepository.cs" />
     <Compile Include="Interface\Service\IHomeService.cs" />
     <Compile Include="Interface\ViewController\IHomeViewController.cs" />
+    <Compile Include="Implementation\Repository\SmallTableMenuRepository.cs" />
+    <Compile Include="Implementation\Service\SmallTableMenuService.cs" />
+    <Compile Include="Implementation\View\SmallTableMenuView.cs">
+      <DependentUpon>SmallTableMenuView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Implementation\ViewController\SmallTableMenuViewController.cs" />
+    <Compile Include="Implementation\ViewModel\SmallTableMenuViewModel.cs" />
+    <Compile Include="Interface\Repository\ISmallTableMenuRepository.cs" />
+    <Compile Include="Interface\Service\ISmallTableMenuService.cs" />
+    <Compile Include="Interface\ViewController\ISmallTableMenuViewController.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="App.xaml" />
     <EmbeddedResource Include="Implementation\View\LoginView.xaml" />
     <EmbeddedResource Include="Implementation\View\HomeView.xaml" />
+    <EmbeddedResource Include="Implementation\View\SmallTableMenuView.xaml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BasePCL\BasePCL.csproj">
