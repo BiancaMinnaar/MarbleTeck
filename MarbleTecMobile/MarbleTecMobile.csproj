@@ -86,6 +86,16 @@
     <Compile Include="Interface\Repository\ISmallTableMenuItemRepository.cs" />
     <Compile Include="Interface\Service\ISmallTableMenuItemService.cs" />
     <Compile Include="Interface\ViewController\ISmallTableMenuItemViewController.cs" />
+    <Compile Include="Implementation\Repository\ClockRepository.cs" />
+    <Compile Include="Implementation\Service\ClockService.cs" />
+    <Compile Include="Implementation\View\ClockView.cs">
+      <DependentUpon>ClockView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Implementation\ViewController\ClockViewController.cs" />
+    <Compile Include="Implementation\ViewModel\ClockViewModel.cs" />
+    <Compile Include="Interface\Repository\IClockRepository.cs" />
+    <Compile Include="Interface\ViewController\IClockViewController.cs" />
+    <Compile Include="Interface\Service\IClockService.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="App.xaml" />
@@ -93,6 +103,7 @@
     <EmbeddedResource Include="Implementation\View\HomeView.xaml" />
     <EmbeddedResource Include="Implementation\View\SmallTableMenuView.xaml" />
     <EmbeddedResource Include="Implementation\View\SmallTableMenuItemView.xaml" />
+    <EmbeddedResource Include="Implementation\View\ClockView.xaml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BasePCL\BasePCL.csproj">
