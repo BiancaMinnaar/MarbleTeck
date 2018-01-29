@@ -21,7 +21,7 @@
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
 
-            <b:SmallTableMenuView Grid.Row="0" Grid.Column="0"></b:SmallTableMenuView>
+            <b:SmallTableMenuView x:Name="Menu" Grid.Row="0" Grid.Column="0"></b:SmallTableMenuView>
         </Grid>
     </ContentPage.Content>
 </b:ProjectBaseContentPage>

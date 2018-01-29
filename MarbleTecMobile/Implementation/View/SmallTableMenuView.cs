@@ -2,11 +2,14 @@ using System;
 using Xamarin.Forms;
 using MarbleTecMobile.Implementation.ViewController;
 using MarbleTecMobile.Implementation.ViewModel;
+using System.Collections.Generic;
 
 namespace MarbleTecMobile.Implementation.View
 {
     public partial class SmallTableMenuView : ProjectBaseContentView<SmallTableMenuViewController, SmallTableMenuViewModel>
     {
+        List<SmallTableMenuItemViewModel> DataSource { get; set; }
+
         public SmallTableMenuView()
         {
             InitializeComponent();
@@ -18,9 +21,12 @@ namespace MarbleTecMobile.Implementation.View
         {
         }
 
-        public async void On_SmallTableMenu_Event(object sender, EventArgs e)
+        public void SetMenuWithItems(List<SmallTableMenuItemViewModel> dataSource)
         {
-            await _ViewController.SmallTableMenu();
+            foreach(var item in dataSource)
+            {
+                var menuItem = new SmallTableMenuItemView(item);
+            }
         }
     }
 }

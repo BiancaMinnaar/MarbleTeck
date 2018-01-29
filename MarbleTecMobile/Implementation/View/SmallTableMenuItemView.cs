@@ -14,13 +14,13 @@ namespace MarbleTecMobile.Implementation.View
             BindingContext = _ViewController.InputObject;
         }
 
-        protected override void SetSVGCollection()
+        public SmallTableMenuItemView(SmallTableMenuItemViewModel model) :this()
         {
+            _ViewController.InputObject = model;
         }
 
-        public async void On_SmallTableMenuItem_Event(object sender, EventArgs e)
+        protected override void SetSVGCollection()
         {
-            await _ViewController.SmallTableMenuItem();
         }
     }
 }

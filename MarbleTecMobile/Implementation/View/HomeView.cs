@@ -22,6 +22,7 @@ namespace MarbleTecMobile.Implementation.View
         public async void On_Home_Event(object sender, EventArgs e)
         {
             await _ViewController.Home();
+            Menu.SetMenuWithItems(_ViewController.InputObject.MenuItems);
         }
     }
 }
