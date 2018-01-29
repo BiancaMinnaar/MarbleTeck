@@ -8,5 +8,10 @@
     xmlns:svg="clr-namespace:TwinTechsForms.NControl;assembly=TwinTechsForms.NControl.SvgImageView"
     x:Class="MarbleTecMobile.Implementation.View.SmallTableMenuItemView" 
     x:TypeArguments="p:SmallTableMenuItemViewController, m:SmallTableMenuItemViewModel">
-    <Label Text="{Binding ItemDescription}" TextColor="Black" />
+    <StackLayout>
+        <StackLayout.GestureRecognizers>
+              <TapGestureRecognizer Command="{Binding MenuClickedCommand}" CommandParameter="{Binding ListIndex}"/>
+        </StackLayout.GestureRecognizers>
+        <Label Text="{Binding ItemDescription}" TextColor="Black" />
+    </StackLayout>
 </b:ProjectBaseContentView>

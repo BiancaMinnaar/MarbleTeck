@@ -21,14 +21,25 @@ namespace MarbleTecMobile.Implementation.View
         {
         }
 
-        public void SetMenuWithItems(List<SmallTableMenuItemViewModel> dataSource)
+        public void SetMenuWithItems(List<SmallTableMenuItemViewModel> dataSource, Action<object> clickEvent)
         {
             Menu.Children.Clear();
-            foreach(var item in dataSource)
+            for (var count = 0; count < dataSource.Count; count++)
             {
+                var item = new SmallTableMenuItemViewModel() 
+                { 
+                    ListIndex=count, 
+                    ItemDescription=dataSource[count].ItemDescription,
+                    MenuClickedCommand = new Command(clickEvent)
+                };
                 var menuItem = new SmallTableMenuItemView(item);
                 Menu.Children.Add(menuItem);
             }
+        }
+
+        void Handle_Tapped(object sender, System.EventArgs e)
+        {
+            _ViewController.ShowMessage("here");
         }
     }
 }
