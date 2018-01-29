@@ -20,7 +20,10 @@
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
 
-            <b:SmallTableMenuView x:Name="Menu" Grid.Row="1" Grid.Column="0"></b:SmallTableMenuView>
+            <StackLayout Orientation="Vertical" Grid.Row="1" Grid.Column="0">
+                <b:SmallTableMenuView x:Name="Menu"></b:SmallTableMenuView>
+                <Button Text="+" Clicked="Handle_Clicked" />
+            </StackLayout>
         </Grid>
     </ContentPage.Content>
 </b:ProjectBaseContentPage>

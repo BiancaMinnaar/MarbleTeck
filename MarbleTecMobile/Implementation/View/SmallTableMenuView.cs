@@ -23,6 +23,7 @@ namespace MarbleTecMobile.Implementation.View
 
         public void SetMenuWithItems(List<SmallTableMenuItemViewModel> dataSource)
         {
+            Menu.Children.Clear();
             foreach(var item in dataSource)
             {
                 var menuItem = new SmallTableMenuItemView(item);

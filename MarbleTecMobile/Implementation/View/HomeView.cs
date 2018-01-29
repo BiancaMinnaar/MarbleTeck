@@ -24,6 +24,12 @@ namespace MarbleTecMobile.Implementation.View
             await _ViewController.Home();
             Menu.SetMenuWithItems(_ViewController.InputObject.MenuItems);
         }
+
+        void Handle_Clicked(object sender, System.EventArgs e)
+        {
+            _ViewController.InputObject.MenuItems.Add(new SmallTableMenuItemViewModel(){ItemDescription="New Item"});
+            Menu.SetMenuWithItems(_ViewController.InputObject.MenuItems);
+        }
     }
 }
 
