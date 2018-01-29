@@ -5,7 +5,7 @@ using MarbleTecMobile.Implementation.ViewModel;
 
 namespace MarbleTecMobile.Implementation.View
 {
-    public partial class SmallTableMenuView : ProjectBaseContentPage<SmallTableMenuViewController, SmallTableMenuViewModel>
+    public partial class SmallTableMenuView : ProjectBaseContentView<SmallTableMenuViewController, SmallTableMenuViewModel>
     {
         public SmallTableMenuView()
         {
