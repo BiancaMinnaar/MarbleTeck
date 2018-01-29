@@ -16,7 +16,7 @@ namespace MarbleTecMobile.Implementation.Service
 
         public async Task Login(LoginViewModel model)
         {
-            string requestURL = "/Login/{userName}/{password}";
+            string requestURL = "/login";
             var httpMethod = BaseNetworkAccessEnum.Get;
             var parameters = new Dictionary<string, object>()
             {
