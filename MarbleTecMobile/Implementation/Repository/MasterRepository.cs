@@ -8,6 +8,7 @@ using MarbleTecMobile.Interface.Repository;
 using MarbleTecMobile.Implementation.ViewModel;
 using Newtonsoft.Json;
 using Xamarin.Forms;
+using MarbleTecMobile.Implementation.View;
 
 namespace MarbleTecMobile.Implementation.Repository
 {
@@ -78,7 +79,7 @@ namespace MarbleTecMobile.Implementation.Repository
 
         public void PushHomeView()
         {
-            
+            _Navigation.PushAsync(new HomeView());
         }
     }
 }

@@ -11,6 +11,6 @@
     BackgroundColor="#565E60"
     Title="Login">
     <ContentPage.Content>
-        
+        <Label Text="HomeView" />
     </ContentPage.Content>
 </b:ProjectBaseContentPage>
