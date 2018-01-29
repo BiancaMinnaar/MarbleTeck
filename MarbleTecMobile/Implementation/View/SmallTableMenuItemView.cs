@@ -17,6 +17,7 @@ namespace MarbleTecMobile.Implementation.View
         public SmallTableMenuItemView(SmallTableMenuItemViewModel model) :this()
         {
             _ViewController.InputObject = model;
+            BindingContext = _ViewController.InputObject;
         }
 
         protected override void SetSVGCollection()

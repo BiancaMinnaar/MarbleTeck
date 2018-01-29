@@ -8,5 +8,5 @@
     xmlns:svg="clr-namespace:TwinTechsForms.NControl;assembly=TwinTechsForms.NControl.SvgImageView"
     x:Class="MarbleTecMobile.Implementation.View.SmallTableMenuItemView" 
     x:TypeArguments="p:SmallTableMenuItemViewController, m:SmallTableMenuItemViewModel">
-    <Label Text="{Binding ItemDescription}" />
+    <Label Text="{Binding ItemDescription}" TextColor="Black" />
 </b:ProjectBaseContentView>

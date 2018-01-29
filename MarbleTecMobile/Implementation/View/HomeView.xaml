@@ -8,8 +8,7 @@
     xmlns:svg="clr-namespace:TwinTechsForms.NControl;assembly=TwinTechsForms.NControl.SvgImageView"
     x:Class="MarbleTecMobile.Implementation.View.HomeView" 
     x:TypeArguments="p:HomeViewController, m:HomeViewModel" 
-    BackgroundColor="#565E60"
-    Title="Login">
+    BackgroundColor="white">
     <ContentPage.Content>
         <Grid>
             <Grid.RowDefinitions>
@@ -21,7 +20,7 @@
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
 
-            <b:SmallTableMenuView x:Name="Menu" Grid.Row="0" Grid.Column="0"></b:SmallTableMenuView>
+            <b:SmallTableMenuView x:Name="Menu" Grid.Row="1" Grid.Column="0"></b:SmallTableMenuView>
         </Grid>
     </ContentPage.Content>
 </b:ProjectBaseContentPage>

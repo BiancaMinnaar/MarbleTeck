@@ -26,6 +26,7 @@ namespace MarbleTecMobile.Implementation.View
             foreach(var item in dataSource)
             {
                 var menuItem = new SmallTableMenuItemView(item);
+                Menu.Children.Add(menuItem);
             }
         }
     }
