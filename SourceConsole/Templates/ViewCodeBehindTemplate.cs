@@ -116,7 +116,7 @@ namespace SourceConsole.Templates {
         {
         }
 
-        public async Task On_");
+        public async void On_");
             
             #line default
             #line hidden

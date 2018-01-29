@@ -24,7 +24,7 @@ namespace <#= _DataModel.ProjectName #>.Implementation.View
         {
         }
 
-        public async Task On_<#= _DataModel.EventName #>_Event(object sender, EventArgs e)
+        public async void On_<#= _DataModel.EventName #>_Event(object sender, EventArgs e)
         {
             await _ViewController.<#= _DataModel.EventName #>();
         }

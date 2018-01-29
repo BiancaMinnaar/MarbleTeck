@@ -8,9 +8,19 @@
     xmlns:svg="clr-namespace:TwinTechsForms.NControl;assembly=TwinTechsForms.NControl.SvgImageView"
     x:Class="MarbleTecMobile.Implementation.View.LoginView" 
     x:TypeArguments="p:LoginViewController, m:LoginViewModel" 
-    BackgroundColor="#565E60"
+    BackgroundColor="Green"
     Title="Login">
     <ContentPage.Content>
-        <Label Text="Login" />
+        <StackLayout Orientation="Vertical" Padding="20,20,20,20">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="End">
+                <Label Text="User Name" FontSize="15" TextColor="White" FontAttributes="Bold"/>
+                <Entry x:Name="usernameEntry" Text="{Binding UserName, Mode=TwoWay}" Placeholder="USERNAME" BackgroundColor="White" TextColor="Gray" FontSize="15" HeightRequest="40"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="End">
+                <Label Text="Password" FontSize="15" TextColor="White" FontAttributes="Bold"/>
+                <Entry x:Name="passwordEntry" Text="{Binding Password, Mode=TwoWay}" Placeholder="PASSWORD" IsPassword="true"  BackgroundColor="White" TextColor="Gray" FontSize="15" HeightRequest="40"/>
+            </StackLayout>
+            <Button x:Name="btnLogin" Text="Login" Clicked="On_Login_Event" TextColor="Black" BorderColor="Red" BorderWidth="1" />
+        </StackLayout>
     </ContentPage.Content>
 </b:ProjectBaseContentPage>

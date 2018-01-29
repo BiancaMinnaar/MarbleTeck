@@ -19,7 +19,7 @@ namespace MarbleTecMobile.Implementation.View
         {
         }
 
-        public async Task On_Login_Event(object sender, EventArgs e)
+        public async void On_Login_Event(object sender, EventArgs e)
         {
             await _ViewController.Login();
         }
