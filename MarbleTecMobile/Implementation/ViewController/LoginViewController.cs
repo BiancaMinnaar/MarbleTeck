@@ -24,9 +24,16 @@ namespace MarbleTecMobile.Implementation.ViewController
 
         public async Task Login()
         {
-            await _Reposetory.Login(InputObject, () => 
-            { 
-                _MasterRepo.PushHomeView();
+            await _Reposetory.Login(InputObject, () =>
+            {
+                if (_ResponseContent != null && _ResponseContent.Contains("username"))
+                {
+                    _MasterRepo.PushHomeView();
+                }
+                else
+                {
+                    ShowMessage("Invalid Login");
+                }
             });
         }
     }
