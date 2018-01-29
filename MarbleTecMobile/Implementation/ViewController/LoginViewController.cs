@@ -24,7 +24,10 @@ namespace MarbleTecMobile.Implementation.ViewController
 
         public async Task Login()
         {
-            
+            await _Reposetory.Login(InputObject, () => 
+            { 
+                
+            });
         }
     }
 }

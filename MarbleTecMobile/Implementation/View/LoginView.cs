@@ -1,6 +1,5 @@
 using System;
 using Xamarin.Forms;
-using System.Threading.Tasks;
 using MarbleTecMobile.Implementation.ViewController;
 using MarbleTecMobile.Implementation.ViewModel;
 

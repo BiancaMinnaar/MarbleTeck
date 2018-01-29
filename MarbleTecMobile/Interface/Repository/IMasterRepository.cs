@@ -16,7 +16,7 @@ namespace MarbleTecMobile.Interface.Repository
         Func<string, Dictionary<string, ParameterTypedValue>, BaseNetworkAccessEnum, Task> NetworkInterfaceWithTypedParameters { get; set; }
 
         //Navigation
-        //void PushHomeView();
+        void PushHomeView();
 
         //Logic
         //debug

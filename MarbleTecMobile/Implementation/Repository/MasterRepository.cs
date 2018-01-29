@@ -75,5 +75,10 @@ namespace MarbleTecMobile.Implementation.Repository
             Debug.WriteLine(heading);
             Debug.WriteLine(JsonConvert.SerializeObject(objectToDump));
         }
+
+        public void PushHomeView()
+        {
+            
+        }
     }
 }
