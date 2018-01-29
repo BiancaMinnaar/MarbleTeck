@@ -22,7 +22,7 @@ namespace MarbleTecMobile.Implementation.View
         public async void On_Home_Event(object sender, EventArgs e)
         {
             await _ViewController.Home();
-            Menu.SetMenuWithItems(_ViewController.InputObject.MenuItems, menuClick);
+            Menu.SetMenuWithItems(_ViewController.InputObject.MenuItems, MenuClick);
         }
 
         void Handle_Clicked(object sender, System.EventArgs e)
@@ -32,11 +32,12 @@ namespace MarbleTecMobile.Implementation.View
                 ListIndex = _ViewController.InputObject.MenuItems.Count,
                 ItemDescription = "New Item"
             });
-            Menu.SetMenuWithItems(_ViewController.InputObject.MenuItems, menuClick);
+            Menu.SetMenuWithItems(_ViewController.InputObject.MenuItems, MenuClick);
         }
 
-        void menuClick(object index)
+        void MenuClick(object index)
         {
+            
         }
     }
 }
