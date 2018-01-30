@@ -37,7 +37,11 @@ namespace MarbleTecMobile.Implementation.View
 
         void MenuClick(object index)
         {
-            
+            var timeModel = new ClockViewModel()
+            {
+                FullDate = DateTime.Now
+            };
+            Detail.Content = new ClockView(timeModel);
         }
     }
 }

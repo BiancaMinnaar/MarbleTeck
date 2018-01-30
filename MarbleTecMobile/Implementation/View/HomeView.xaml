@@ -31,7 +31,7 @@
                 </Grid.RowDefinitions>
 
                 <Button Grid.Row="0" Text="^" FontSize="40" TextColor="Purple" HorizontalOptions="Center"></Button>
-                <ContentView x:Name="Detail"></ContentView>
+                <ContentView Grid.Row="1" x:Name="Detail"></ContentView>
             </Grid>
         </Grid>
     </ContentPage.Content>

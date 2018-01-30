@@ -5,12 +5,19 @@ using MarbleTecMobile.Implementation.ViewModel;
 
 namespace MarbleTecMobile.Implementation.View
 {
-    public partial class ClockView : ProjectBaseContentPage<ClockViewController, ClockViewModel>
+    public partial class ClockView : ProjectBaseContentView<ClockViewController, ClockViewModel>
     {
         public ClockView()
         {
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
+            BindingContext = _ViewController.InputObject;
+        }
+
+        public ClockView(ClockViewModel model)
+            : this()
+        {
+            _ViewController.InputObject = model;
             BindingContext = _ViewController.InputObject;
         }
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<b:ProjectBaseContentPage 
+<b:ProjectBaseContentView 
     xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:m="clr-namespace:MarbleTecMobile.Implementation.ViewModel"
@@ -7,10 +7,12 @@
     xmlns:b="clr-namespace:MarbleTecMobile.Implementation.View"
     xmlns:svg="clr-namespace:TwinTechsForms.NControl;assembly=TwinTechsForms.NControl.SvgImageView"
     x:Class="MarbleTecMobile.Implementation.View.ClockView" 
-    x:TypeArguments="p:ClockViewController, m:ClockViewModel" 
-    BackgroundColor="#565E60"
-    Title="Login">
-    <ContentPage.Content>
-        
-    </ContentPage.Content>
-</b:ProjectBaseContentPage>
+    x:TypeArguments="p:ClockViewController, m:ClockViewModel">
+    <StackLayout Orientation="Horizontal">
+        <Label Text="{Binding Hour}" />
+        <Label Text=":" />
+        <Label Text="{Binding Minute}" />
+        <Label Text=":" />
+        <Label Text="{Binding Second}" />
+    </StackLayout>
+</b:ProjectBaseContentView>
