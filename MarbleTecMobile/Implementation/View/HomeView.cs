@@ -43,6 +43,21 @@ namespace MarbleTecMobile.Implementation.View
             };
             Detail.Content = new ClockView(timeModel);
         }
+
+        void Handle_DrawMenu(object sender, PanUpdatedEventArgs e)
+        {
+            var translatedX = e.TotalX;
+            var translatedY = e.TotalY;
+
+            if (translatedY < 0 && Math.Abs(translatedY) > Math.Abs(translatedX))
+            {
+                DrawMenuContent.HeightRequest = 0.0;
+            }
+            else if (translatedY > 0 && translatedY > Math.Abs(translatedX))
+            {
+                DrawMenuContent.HeightRequest = 100.0;
+            }
+        }
     }
 }
 
