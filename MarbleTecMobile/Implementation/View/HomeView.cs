@@ -37,11 +37,7 @@ namespace MarbleTecMobile.Implementation.View
 
         void MenuClick(object index)
         {
-            var timeModel = new ClockViewModel()
-            {
-                FullDate = DateTime.Now
-            };
-            Detail.Content = new ClockView(timeModel);
+            
         }
 
         void Handle_DrawMenu(object sender, PanUpdatedEventArgs e)
@@ -57,6 +53,25 @@ namespace MarbleTecMobile.Implementation.View
             {
                 DrawMenuContent.HeightRequest = 100.0;
             }
+        }
+
+        void Handle_Watch_Clicked(object sender, System.EventArgs e)
+        {
+            var timeModel = new ClockViewModel()
+            {
+                FullDate = DateTime.Now
+            };
+            Detail.Content = new ClockView(timeModel);
+        }
+
+        void Handle_Calender_Clicked(object sender, System.EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        void Handle_Stochastic_Clicked(object sender, System.EventArgs e)
+        {
+            throw new NotImplementedException();
         }
     }
 }

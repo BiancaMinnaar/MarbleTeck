@@ -26,7 +26,7 @@
             </StackLayout>
             <Grid Grid.Row="1" Grid.Column="1" HorizontalOptions="Center">
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="20" />
+                    <RowDefinition Height="*" />
                     <RowDefinition Height="*" />
                 </Grid.RowDefinitions>
 
@@ -36,9 +36,9 @@
                     </StackLayout.GestureRecognizers>
                     <Label Text="^"/>
                     <StackLayout x:Name="DrawMenuContent" HeightRequest="0">
-                        <Label Text="Watch" />
-                        <Label Text="Calender Entry" />
-                        <Label Text="stochastic Graph" />
+                        <Button Text="Watch" Clicked="Handle_Watch_Clicked" />
+                        <Button Text="Calender Entry" Clicked="Handle_Calender_Clicked" />
+                        <Button Text="Stochastic Graph" Clicked="Handle_Stochastic_Clicked" />
                     </StackLayout>
                 </StackLayout>
                 <ContentView Grid.Row="1" x:Name="Detail"></ContentView>
